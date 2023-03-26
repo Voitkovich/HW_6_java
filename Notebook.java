@@ -31,8 +31,8 @@ public class Notebook { // Создаем класс
         NoteList Notebook_1 = new NoteList(1, "ASUS", 4, 256, "Linux", "BLUE", 44000);
         NoteList Notebook_2 = new NoteList(2, "ASUS", 16, 512, "Windows10", "GRAY", 44000);
         NoteList Notebook_3 = new NoteList(3, "HD", 16, 1000, "Linyx", "BLACK", 55000);
-        NoteList Notebook_4 = new NoteList(4, "MSI", 8, 256, "Windows11", "WHITE", 25000);
-        NoteList Notebook_5 = new NoteList(5, "ASER", 4, 128, "DOS", "BLACK", 33000);
+        NoteList Notebook_4 = new NoteList(4, "MAC", 8, 256, "MacOS", "WHITE", 25000);
+        NoteList Notebook_5 = new NoteList(5, "ASER", 4, 128, "Windows11", "BLACK", 33000);
         NoteList[] store = new NoteList[] { Notebook_1, Notebook_2, Notebook_3, Notebook_4, Notebook_5 }; 
                                                                                                           
         // Принимаем выбор пользователя
@@ -57,7 +57,7 @@ public class Notebook { // Создаем класс
                 System.out.println(NoteList.getRAM(store, ram));
                 break;
             case 4: // Вывод данных вариантов OS
-                String sc2 = input.Str("Введите Операционную систему: Linux, Windows10, Windows11, DOS");
+                String sc2 = input.Str("Введите Операционную систему: Linux, Windows10, MacOS, Windows11");
                 System.out.println(NoteList.getSystem(store, sc2));
                 break;
             case 5: // Вывод данных вариантов цвета
@@ -65,7 +65,7 @@ public class Notebook { // Создаем класс
                 System.out.println(NoteList.getColour(store, sc3));
                 break;
             case 6: // Вывод данных вариантов производителя
-                String sc1 = input.Str("Выберете торговую марку производителя: ASUS, HD, MSI, ASER");
+                String sc1 = input.Str("Выберете торговую марку производителя: ASUS, HD, MAC, ASER");
                 System.out.println(NoteList.getBrand(store, sc1));
                 break;
             case 7: // Вывод данных вариантов цены

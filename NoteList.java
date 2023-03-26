@@ -16,8 +16,7 @@ public class NoteList {
     public static StringBuilder getHD(NoteList[] store, int hd) { // Ф-ция получения данных HD
         StringBuilder result = new StringBuilder();
         for (NoteList el : store) {
-            if (hd == el.hd) { // Сравнисаем введенные данные, если совпадают, добавляем все денные этого эл-та
-                               // и возвращаем для вывода
+            if (hd == el.hd) { // Сравниваем данные, если совпадают, добавляем все данные этого элемента и выводим.
                 result.append("brand: " + el.brand + ", " + "RAM: " + el.ram + ", " + "HD: " + el.hd + ", " + "System: "
                         + el.system + ", " + "colour: " + el.colour + ", " + "price: " + el.price + "\n");
             }
